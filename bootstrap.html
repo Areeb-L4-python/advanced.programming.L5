@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header, .footer {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            background-color: #333;
+        }
+        .header { top: 0; }
+        .footer { bottom: 0; }
+        .content {
+            padding-top: 70px; /* Space for fixed header */
+            padding-bottom: 70px; /* Space for fixed footer */
+        }
+        .box {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Fixed Header -->
+<div class="header">Fixed Header</div>
+
+<div class="container content">
+    <!-- Grid Layout -->
+    <div class="row g-3">
+        <div class="col-12 col-md-4 box bg-primary">1</div>
+        <div class="col-12 col-md-4 box bg-secondary">2</div>
+        <div class="col-12 col-md-4 box bg-success">3</div>
+        <div class="col-12 col-md-4 box bg-danger">4</div>
+        <div class="col-12 col-md-4 box bg-warning text-dark">5</div>
+        <div class="col-12 col-md-4 box bg-info">6</div>
+    </div>
+</div>
+
+<!-- Fixed Footer -->
+<div class="footer">Fixed Footer</div>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
